@@ -31,7 +31,7 @@ instance.interceptors.response.use(
     return response
   },
   function (error) {
-    const { status } = error.response
+    const { status } = error?.response
     if (status === 401) {
       localStorage.removeItem('token')
       localStorage.removeItem('refresh_token')

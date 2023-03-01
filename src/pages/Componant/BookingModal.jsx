@@ -5,6 +5,7 @@ import IncDecInput from './IncDecInput';
 import { useSelector, useDispatch } from 'react-redux'
 import { apiGet } from '@/utils/apiFetch';
 import { EnvironmentOutlined } from '@ant-design/icons'
+import Link from 'next/link';
 
 
 export default function BookingModal() {
@@ -62,7 +63,7 @@ return (
         <IncDecInput label='rooms'/>
         </div>
       </div>
-      <Button size='large' warning onClick={()=>handleSubmit()}>Check Availability</Button>
+      <Button size='large' warning onClick={()=>handleSubmit()}><Link href="/Componant/SearchResult/SearchRoom">Check Availability</Link></Button>
       </form>
     </div>
 </>

@@ -5,6 +5,8 @@ import styles from '@/styles/Home.module.css'
 import Hero from './Componant/Hero'
 import Header from './Componant/Header'
 import BookingModal from './Componant/BookingModal'
+import SearchRoom from './Componant/SearchResult/SearchRoom'
+import App from './App'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,7 +20,9 @@ export default function Home() {
       </Head>
      {/* <Hero /> */}
      <Header />
-     <BookingModal />
+       <App />
+     {/* <BookingModal /> */}
+     {/* <SearchRoom /> */}
     </>
   )
 }

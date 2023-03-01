@@ -1,0 +1,55 @@
+.searchRoom{
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+        padding: 0;
+
+      .image{
+        width: 20%;
+        background: red;
+      }
+      .details{
+        width: 80%;
+        // background: #b2f9b7;
+        padding-left: 1.5rem;
+        position: relative;
+
+        .amenities{
+            display: flex;
+            // justify-content: center;
+            align-items: center;
+            margin: 0;
+
+            .feature{
+              margin-top: 0.5rem;
+              display: flex;
+              align-items: center;
+              margin-right: 1rem;
+              font-size: 1.01rem;
+            }
+        }
+        .price{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 1rem;
+
+            .text{
+                display: flex;
+            }
+            .button{
+                margin: 0.5rem;
+            }
+        }
+      }
+
+       
+    }
+}
+
