@@ -1,0 +1,24 @@
+.tourPack{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+
+    .mainCard{
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        width: 80vw;
+    }
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+
+    .image{
+        border-radius: 0.5rem;
+    }
+    .text{
+        margin-left: 0.5rem;
+    }
+}

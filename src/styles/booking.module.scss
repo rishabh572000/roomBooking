@@ -1,11 +1,36 @@
+.background{
+  position: relative;
+  width: 100%;
+  height: 70vh;
+  background: url('../Media/hero.jpg');
+}
+
 .bookingModal{
-  background-color: #f3f3f3;
-  width: 30%;
+  position: absolute;
+  background-color: #faedcd;
+  width: 25%;
   height: auto;
   border-radius: 0.5rem;
   padding: 20px 10px ;
   margin: 20px;
+
+  .formGroup{
+    margin-top: 0.7rem;
+
+    .label{
+      font-size: 1rem;
+    }
+  }
 }
 .date{
     width: 100%;
+}
+
+.inputSet{
+  display: flex;
+  justify-content: space-between;
+
+  .input{
+    margin: 0 0.7rem;
+  }
 }

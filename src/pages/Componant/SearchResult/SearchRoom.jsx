@@ -10,8 +10,9 @@ import {
   WarningOutlined,
 } from '@ant-design/icons';
 import CarouselComp from '../Reuse/CarouselComp';
+import Link from 'next/link';
 
-export default function SearchRoom() {
+export default function SearchRoom({value}) {
   const { Title, Text } = Typography;
 return (
   <>
@@ -19,12 +20,12 @@ return (
       {/* <Card> */}
         <div className={styles.container}>
           <div className={styles.image}>
-           <CarouselComp />
+           <CarouselComp docs={value?.docs} />
           </div>
           <div className={styles.details}>
             <div className={styles.heading}>
-              <Title level={3}  style={{lineHeight:0}}>Collection O Hotel Lotus Near Dwarka Sector 9</Title>
-              <Title  level={5} type="secondary"  style={{lineHeight:0.5}}>Near Nexa Showroom Sector 9 Dwarka, Delhi</Title>
+              <Title level={3}  style={{lineHeight:0}}>{value?.hotel_name}</Title>
+              <Title  level={5} type="secondary"  style={{lineHeight:0.5}}>{value?.address}</Title>
             </div>
             <div className={styles.amenities}>
               <Text level={5}  className={styles.feature} ><CarOutlined /> Parking facility</Text>
@@ -34,12 +35,12 @@ return (
             </div>
             <div className={styles.price}>
               <div className={styles.text}>
-              <Title level={3} type='danger'>998.00</Title>
-              <Title level={5} delete  type="secondary" style={{lineHeight:0, paddingLeft:10}}>2040.00</Title>
+              <Title level={3} type='danger'>{value?.price}</Title>
+              <Title level={5} delete  type="secondary" style={{lineHeight:0, paddingLeft:10}}>{value?.price *2.5}</Title>
             </div>
             <div className={styles.buttons}>
               <Button size='large' className={styles.button}>View Details</Button>
-              <Button  type="primary" size='large'  className={styles.button}>Book Now</Button>
+              <Button  type="primary" size='large'  className={styles.button}><Link href={{ pathname: '/Componant/Checkin', query: {id:value?._id} }}>Book Now</Link></Button>
             </div>
             </div>
           </div>

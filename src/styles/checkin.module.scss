@@ -1,0 +1,14 @@
+.checkin{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+  .left{
+    width: 40%;
+  }
+  .right{
+    width: 35%;
+    margin-left: 2rem;
+  }
+}

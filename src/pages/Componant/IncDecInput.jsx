@@ -31,7 +31,7 @@ return (
     <div className={style.IncDecInput}>
       <div className={style.inputSet}>
       <Button type="primary" size='large' onClick={() => decremen()}>- 1</Button>
-      <Input placeholder="Basic usage" size='large' value={label=='guests' ? count : rooms}/>
+      <Input className={style.input} placeholder="Basic usage" size='large' value={label=='guests' ? count : rooms}/>
       <Button type="primary" size='large' onClick={() => inceremen()}>+ 1</Button>
       </div>
     </div>

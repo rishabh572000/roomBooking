@@ -1,5 +1,4 @@
 // @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
 .header{
     width: 100%;
     height: 5rem;
@@ -8,11 +7,15 @@
     justify-content: space-around;
     align-items: center;
 
-    .dropdownSection{
-        ul{
-            list-style: none;
-            display: flex;
-            // font-size: ;
-        }
+    // .dropdownSection{
+    //     ul{
+    //         list-style: none;
+    //         display: flex;
+    //     }
+    // }
+
+    .menuSection{
+        width: auto;
+        background: transparent;
     }
 }
